@@ -1,0 +1,18 @@
+.errorColor{
+    color: red;
+}
+
+.imageCover{
+    padding: 10px;
+    background: url(../../assets/images/library.jpg);
+    background-size: cover;
+}
+
+.formContainer{
+    height: 600px;
+}
+
+.formContainer h1{
+    text-align: center;
+    margin-bottom: 20px;
+}

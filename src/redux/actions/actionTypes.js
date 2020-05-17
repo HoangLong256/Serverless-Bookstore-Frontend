@@ -1,0 +1,10 @@
+export const GET_PRODUCT = 'GET_PRODUCT';
+export const ADD_PRODUCT = 'ADD_PRODUCT';
+export const GET_ORDER = 'GET_ORDER';
+export const ADD_CUSTOMER = 'ADD_CUSTOMER';
+export const ADD_ITEM = 'ADD_ITEM';
+export const REMOVE_ITEM = 'REMOVE_ITEM';
+export const CLEAR_ORDER = 'CLEAR_ORDER';
+export const LOGOUT = 'LOGOUT';
+export const LOGIN_FAILED = 'LOGIN_FAILED';
+export const LOGIN_SUCCESSFUL = 'LOGIN_SUCCESSFUL';
