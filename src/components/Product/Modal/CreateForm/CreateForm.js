@@ -58,6 +58,9 @@ const CreateForm = (props) => {
             <Form.Group controlId="file">
                 <Form.Label>Attachment</Form.Label>
                 <Form.Control type="file" name="file" onChange={(event) => props.onEdit(event)} />
+                <Form.Text className={styles.errorColor}>
+                    {props.error.file}
+                </Form.Text>
             </Form.Group>
         </Form>
     );

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import { connect } from 'react-redux';
+import { Auth } from "aws-amplify"; 
 import * as actionTypes from '../../redux/actions/actionTypes';
 import Item from './Item/Item';
 import { Container, Row, Col } from 'react-bootstrap';
@@ -25,7 +26,12 @@ class Shopping extends Component {
         }
     }
 
+    getImage = async ()=>{
+        await Auth.signIn('s3727634@rmit.edu.vn', 'Admin@123');
+    }
+
     componentDidMount() {
+        this.getImage();
         this.setState({
             loading: true
         }, ()=> this.fetchData(2))

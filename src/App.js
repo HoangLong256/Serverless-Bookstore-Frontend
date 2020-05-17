@@ -11,7 +11,6 @@ import CheckOut from './components/CheckOut/CheckOut';
 import Login from './components/Login/Login';
 import NotFound from './components/NotFound/NotFound';
 import Footer from './components/Footer/Footer';
-import Location from './components/Location/Location';
 import HomePage from './components/HomePage/HomePage';
 function App(props) {
   let switchRoute = '';

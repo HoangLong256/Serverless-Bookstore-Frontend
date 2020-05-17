@@ -59,7 +59,11 @@ class CreateModal extends Component {
             case 'file':
                 if (event.target.files[0].name === null) {
                     error.file = "Please select a file";
-                } else {
+                }else if(event.target.files[0].size > 5000000){
+                    error.file = "Please select a file < 5MB"
+                }else if(event.target.files[0].type.split('/')[0] !== 'image'){
+                    error.file = "Not a image file"
+                }else {
                     error.file = null;
                 }
                 break;
