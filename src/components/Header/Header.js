@@ -19,7 +19,7 @@ const Header = (props) => {
           activeStyle={{ color: '#e48130' }}>Order
         </NavLink>
         <NavLink
-          className="nav-link" to="/store"
+          className="nav-link" to="/home"
           onClick={props.logout}
           activeStyle={{ color: '#e48130' }}>Logout
         </NavLink>
@@ -28,6 +28,10 @@ const Header = (props) => {
   } else {
     navItem = (
       <Nav className="mr-auto">
+        <NavLink
+          className="nav-link" to="/home"
+          activeStyle={{ color: '#e48130' }}>Home
+        </NavLink>
         <NavLink
           className="nav-link" to="/store"
           activeStyle={{ color: '#e48130' }}>Store
@@ -44,14 +48,21 @@ const Header = (props) => {
     )
   }
   return (
-    <Navbar className={styles.navbar} variant="dark">
+    <Navbar expand="md" className={styles.navbar} variant="dark" style={{
+      height: '60px'
+    }}>
       <Navbar.Brand style={{
         fontWeight: "bold",
         fontSize: "25px"
       }} >La Librairie
     </Navbar.Brand>
+      <Navbar.Toggle aria-controls="basic-navbar-nav" />
+      <Navbar.Collapse id="basic-navbar-nav" style={{
+        backgroundColor: 'rgb(118, 194, 208)'
+      }}>
       {navItem}
-    </Navbar>
+      </Navbar.Collapse>
+    </Navbar >
   );
 };
 

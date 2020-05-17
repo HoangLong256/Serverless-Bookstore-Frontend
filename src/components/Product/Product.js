@@ -143,7 +143,9 @@ class Product extends Component {
         return (
             <Container>
                 <Row >
-                    <Col className="mt-5">
+                    <Col className="mt-5" style={{
+                height: `${window.innerHeight - 165}px`
+            }}>
                         <h1>Product Information</h1>
                         <Button variant="outline-primary" onClick={this.openCreateModalHandler}>Create</Button>
                         <Table striped bordered hover responsive className="mt-3">

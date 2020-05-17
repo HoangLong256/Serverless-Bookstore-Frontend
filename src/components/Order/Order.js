@@ -83,7 +83,9 @@ class Order extends Component {
 
     render() {
         return (
-            <Container className="mt-5">
+            <Container className="mt-5" style={{
+                height: `${window.innerHeight - 165}px`
+            }}>
                 <Row>
                     <Col className="m-auto">
                         <h1>Order Summary</h1>

@@ -38,7 +38,9 @@ class Shopping extends Component {
     }
     render() {
         return (
-            <div>
+            <div style={{
+                minHeight: `${window.innerHeight - 120}px`
+            }}>
                 <h1>Shopping</h1>
                 <Container>
                     <Row>

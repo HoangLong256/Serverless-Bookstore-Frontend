@@ -10,6 +10,9 @@ import MyBag from './components/MyBag/MyBag';
 import CheckOut from './components/CheckOut/CheckOut';
 import Login from './components/Login/Login';
 import NotFound from './components/NotFound/NotFound';
+import Footer from './components/Footer/Footer';
+import Location from './components/Location/Location';
+import HomePage from './components/HomePage/HomePage';
 function App(props) {
   let switchRoute = '';
   if (props.loginStatus) {
@@ -25,11 +28,12 @@ function App(props) {
     switchRoute = (
       <Switch>
         <Route path="/login" component={Login} />;
+        <Route path="/home" component={HomePage} />;
         <Route path="/checkout" component={CheckOut} />;
         <Route path="/mybag" component={MyBag} />;
         <Route path="/store" component={Store} exact />;
         <Route path="/store/item/:id" component={ItemDetail} />;
-        <Route path="/" component={Store} exact />;
+        <Route path="/" component={HomePage} exact />;
         <Route component={NotFound}/>
       </Switch>
     )
@@ -39,6 +43,7 @@ function App(props) {
     <div className="App">
       <Header />
       {switchRoute}
+      <Footer/>
     </div>
   );
 }

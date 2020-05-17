@@ -1,0 +1,32 @@
+/* Slider */
+.bigTitle{
+    /* Make the div center */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* Other settings */
+    width: 300px;
+    height: 150;
+    border: 5px solid white;
+}
+
+.bigInside {
+    border: 5px solid white;
+    height: 80px;
+    margin:25px 30px ;
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.carrousel_wrapper {
+    height:700px;
+    overflow: hidden;
+}
+
+.carrousel_image {
+    
+    background-size: cover !important;
+}

@@ -5,16 +5,11 @@ import {createStore, combineReducers} from 'redux';
 import {Provider} from 'react-redux';
 import { Amplify } from 'aws-amplify';
 import config from './config';
-
 import './index.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import productReducer from './redux/reducers/product';
 import orderReducer from './redux/reducers/order';
 import authReducer from './redux/reducers/auth';
-
-
-
-
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 

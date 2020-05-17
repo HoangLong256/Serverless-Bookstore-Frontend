@@ -9,7 +9,9 @@ class YourOrder extends Component {
     }
     render() {
         return (
-            <Container>
+            <Container style={{
+                height: `${window.innerHeight - 120}px`
+            }}>
                 <Row>
                     <Col>
                         <h1>My Bag</h1>

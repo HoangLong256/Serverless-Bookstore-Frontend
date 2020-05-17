@@ -53,7 +53,9 @@ class ItemDetail extends Component {
 
     render() {
         return (
-            <Container className="mt-5">
+            <Container className="mt-5" style={{
+                height: `${window.innerHeight - 168}px`
+            }}>
                 <h1 style={{fontSize: '60px'}}>{this.state.item.title}</h1>
                 <Row>
                     <Col md={6}>

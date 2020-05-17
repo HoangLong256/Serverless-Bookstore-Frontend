@@ -64,9 +64,11 @@ class Login extends Component {
     }
     render() {
         return (
-            <Container className="mt-5">
+            <Container className="mt-5" style={{
+                minHeight: `${window.innerHeight - 168}px`
+            }}>
                 <Row className="mt-5  p-20">
-                    <Col md={6} className={styles.imageCover}> </Col>
+                    <Col md={6} className={styles.imageCover + ' d-none d-md-block' }> </Col>
                     <Col md={6} className={styles.formContainer}>
                         <h1>Login Form</h1>
                         <Form >

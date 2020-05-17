@@ -12,6 +12,13 @@ h1{
   text-align: center;
 }
 
+footer{
+  background-color : rgb(118, 194, 208) !important;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
