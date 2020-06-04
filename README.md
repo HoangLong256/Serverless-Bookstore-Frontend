@@ -1,16 +1,16 @@
 
 # La Librairie - A online bookstore
-[Frontend](https://github.com/HoangLong256/Serverless-Bookstore-Frontend)
-[Backend](https://github.com/HoangLong256/Serverless-Bookstore-Backend)
+- [Frontend](https://github.com/HoangLong256/Serverless-Bookstore-Frontend)
+- [Backend](https://github.com/HoangLong256/Serverless-Bookstore-Backend)
 
 
 ## Description:
 An e-commerce website for selling and managing books. 
-A full details report can be found here [Report]()
+A full details report can be downloaded here [Report](https://github.com/HoangLong256/Serverless-Bookstore-Frontend/blob/master/Report.pdf)
 
 ## Account
-Username: s3727634@rmit.edu.vn
-Password: Admin@123
+- Username: s3727634@rmit.edu.vn
+- Password: Admin@123
 
 ## URL: [Link](http://la-librairie.info)
 
